@@ -4102,6 +4102,8 @@ uint16_t GFX4dIoD9::GetSliderValue(uint16_t ui, uint8_t axis, uint16_t uiv, uint
       wpos = (gciobjframes[ui] - 1) - (gciobjframes[ui] - 1) * wpos / (wsiz - maxg) ;    // max-min - (max-min) * posn / (height-17)
     return wpos;
   }
+   
+  return 0;
 }
 
 int GFX4dIoD9::DecodeKeypad(int kpad, int kpress, byte *kbks, int8_t *kbck)
